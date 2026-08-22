@@ -48,10 +48,13 @@ public class TestMuDriverFactory {
         ltOptions.setCapability("username", username);
         ltOptions.setCapability("accessKey", accessKey);
 
+        ltOptions.setCapability("platformName", os);
+        ltOptions.setCapability("platformVersion", osVersion);
+
         ltOptions.setCapability("name", testName);
         ltOptions.setCapability("build", buildName);
 
-        // Required assignment observability
+        // Assignment observability
         ltOptions.setCapability("video", true);
         ltOptions.setCapability("visual", true);
         ltOptions.setCapability("network", true);
@@ -65,9 +68,7 @@ public class TestMuDriverFactory {
         try {
 
             return new RemoteWebDriver(
-                    new URI(
-                            "https://hub.lambdatest.com/wd/hub"
-                    ).toURL(),
+                    new URI("https://hub.lambdatest.com/wd/hub").toURL(),
                     capabilities
             );
 
