@@ -23,8 +23,8 @@ public class TestScenario3Cloud {
     	driver = TestMuDriverFactory.createDriver(
     	        "Chrome",
     	        "latest",
-    	        "Windows 10",
-    	        "11",
+    	        "Windows 11",
+                 "latest",
     	        "Scenario 3 - Input Form Submit",
     	        "selenium-101-assignment"
     	);
