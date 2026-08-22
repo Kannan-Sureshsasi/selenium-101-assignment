@@ -2,7 +2,7 @@
 
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 
-<suite name="Selenium 101 Assignment">
+<suite name="Selenium 101 Assignment" parallel="tests" thread-count="6">
 
     <!-- Chrome Tests -->
 
