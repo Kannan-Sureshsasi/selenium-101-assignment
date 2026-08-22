@@ -24,8 +24,8 @@ public class TestScenario2Cloud {
         driver = TestMuDriverFactory.createDriver(
                 "Chrome",
                 "latest",
-                "Windows 10",
-                "11",
+                "Windows 11",
+                 "latest",
                 "Scenario 2 - Drag Drop Slider",
                 "Selenium 101 Assignment"
         );
